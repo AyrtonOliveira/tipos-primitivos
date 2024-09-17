@@ -26,10 +26,10 @@ console.log("Divisão: " + num1 + " / " + num2 + " = " + divisao + ".\n" )
 
 //4-
 console.log("4º- Área do triângulo:")
-const base = 10
-const altura = 20
-console.log("A base de um triângulo é " + base + "cm" + " e sua altura é " + altura + "cm" + ", calcule a área do triângulo.")
-console.log("A área do triângulo é = " +  [base*altura]/2 + "cm².\n")
+const b = 10
+const h = 20
+console.log("A base de um triângulo é " + b + "cm" + " e sua altura é " + h + "cm" + ", calcule a área do triângulo.")
+console.log("A área do triângulo é = " +  [b*h]/2 + "cm².\n")
 
 //5-
 console.log("5º- Média:")
@@ -38,7 +38,7 @@ const nota2 = 8
 const nota3 = 7
 media = [nota1+nota2+nota3] / 3
 console.log("Determinado aluno obteve as seguintnes notas: 10, 8 e 7 na Av11, Av2 e Av3 respectivamente. Calcule a média:")
-console.log("O Resultado da média é: " + media + ".\n")
+console.log("O Resultado da média é: " + media.toFixed(2) + ".\n")
 
 //6-
 console.log("6º- Desconto:")
@@ -49,9 +49,27 @@ console.log("SÓ HOJE!!!! Kg do Tomate com 20% de desconto!! De R$ " + preco + "
 
 //7-
 console.log("7º- IR:")
-const alq4 = 27.5/100
+const alq = 27.5/100
 var salario = 7500
-console.log("O salário de Jucrutes no mês de Agosto foi" + )
+let salarioBruto = salario - [salario*alq]
+console.log("O salário de Jucrutes no mês de Agosto foi R$ " + salarioBruto.toFixed(2) + ".\n")
 
+//8-
+console.log("8º- Conversor de Moedas:")
+var dollar = 100
+var real = 5.51
+let realFinal = ((dollar*real).toFixed(2))
+console.log("De acordo com a cotação atual, " +  dollar + "US$ equivale a R$ " + realFinal + ".\n")
 
+//9-
+console.log("9º- Conversor de Temperatura:")
+var celcius = 32
+var fahrenheit = (celcius*9/5)+32
+console.log("32 °C equivalem à " + fahrenheit.toFixed(2) + "°F.\n")
 
+//10-
+console.log("10º- IMC:")
+var peso = 102
+var altura = 1.76
+var imc = peso/(altura*altura)
+console.log("Para uma pessoa que possui " + altura + "m de altura e pesa " + peso + "Kg, o IMC é " + imc.toFixed(2) + ", se classificando como OBESIDADE GRAU II.")
