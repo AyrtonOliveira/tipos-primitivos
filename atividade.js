@@ -49,7 +49,7 @@ console.log("SÓ HOJE!!!! Kg do Tomate com 20% de desconto!! De R$ " + preco + "
 
 //7-
 console.log("7º- IR:")
-const alq = 27.5/100
+let alq = 27.5/100
 var salario = 7500
 let salarioBruto = salario - [salario*alq]
 console.log("O salário de Jucrutes no mês de Agosto foi R$ " + salarioBruto.toFixed(2) + ".\n")
@@ -64,12 +64,12 @@ console.log("De acordo com a cotação atual, " +  dollar + "US$ equivale a R$ "
 //9-
 console.log("9º- Conversor de Temperatura:")
 var celcius = 32
-var fahrenheit = (celcius*9/5)+32
+let fahrenheit = (celcius*9/5)+32
 console.log("32 °C equivalem à " + fahrenheit.toFixed(2) + "°F.\n")
 
 //10-
 console.log("10º- IMC:")
 var peso = 102
 var altura = 1.76
-var imc = peso/(altura*altura)
+let imc = peso/(altura*altura)
 console.log("Para uma pessoa que possui " + altura + "m de altura e pesa " + peso + "Kg, o IMC é " + imc.toFixed(2) + ", se classificando como OBESIDADE GRAU II.")
